@@ -1,1 +1,34 @@
 site_name: My Docs
+
+theme:
+  name: material
+
+  font:
+    text: Noto Sans JP
+    code: Inconsolata
+
+  palette:
+    - scheme: default
+      primary: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  icon:
+    repo: fontawesome/brands/github
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+plugins:
+  search:
+    lang: "ja"
+
+nav:
+  - home: index.md
+  - uvの設定: "1_uvの設定.md"
