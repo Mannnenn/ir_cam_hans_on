@@ -2,6 +2,9 @@ site_name: My Docs
 
 theme:
   name: material
+  features:
+    - content.code.copy
+
 
   font:
     text: Noto Sans JP
@@ -36,4 +39,4 @@ nav:
       - uvの設定: "1/1-2_uvの設定.md"
   - カメラ画像の取得:
       - デプスとrgb画像の取得: "2/2-1_デプスとrgb画像の取得.md"
-      - カメラ画像の保存: "2/2-2_カメラ画像の保存.md"
+      - カメラ設定の変更: "2/2-2_カメラ設定の変更.md"
