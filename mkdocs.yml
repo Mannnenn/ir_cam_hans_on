@@ -31,4 +31,6 @@ plugins:
 
 nav:
   - home: index.md
-  - uvの設定: "1_uvの設定.md"
+  - uvの設定:
+      - uvのインストール: "1/1-1_uvのインストール.md"
+      - uvの設定: "1/1-2_uvの設定.md"
