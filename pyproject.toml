@@ -1,0 +1,54 @@
+[project]
+name = "ir-cam-hads-on"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.9.2",
+    "mkdocs-material>=9.5.44",
+    "mkdocs>=1.6.1",
+    "numpy>=2.1.2",
+    "opencv-python",
+    "pyrealsense2>=2.55.1.6486",
+    "ruff>=0.7.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.7.0",
+]
+
+
+# uvの記述は省略 ...
+
+[tool.ruff]
+# 1行の最大文字数
+line-length = 88
+
+[tool.ruff.lint]
+# チェックするエラーの種類
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+# 除外するエラーの種類
+ignore = [
+]
+
+# ファイルごとのエラー除外
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+# isort の設定
+[tool.ruff.lint.isort]
+known-third-party = ["fastapi", "pydantic", "starlette"]
+
+[tool.ruff.lint.pyupgrade]
+# Python3.8互換のための設定
+keep-runtime-typing = true
